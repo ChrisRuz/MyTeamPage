@@ -9,7 +9,10 @@ body {
   font-family: "Poppins", sans-serif;
   font-family: "PT Serif", serif;
   line-height: 24px;
-  color: #333;
+  color: #333; 
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
 .ancho {
@@ -34,11 +37,6 @@ header {
   font-size: 14px;
   width: 300px;
   margin-right: 200px;
-}
-
-.galeria_grid {
-  display: grid;
-  grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6";
 }
 
 .galeria_grid figure img {
@@ -99,4 +97,20 @@ header {
   height: 449px;
   left: 864.69px;
   top: 796px;
+}
+
+footer{
+  color: white;
+  background-color: #1A1A1A;
+  width: 100%;
+  height: 81px;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  z-index: 10;
+  margin-top: auto;
+}
+
+footer h2{
+  padding-top: 25px;
 }
